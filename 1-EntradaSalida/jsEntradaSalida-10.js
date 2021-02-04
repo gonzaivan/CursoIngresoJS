@@ -8,12 +8,16 @@ function mostrardescuento()
 	let importe;
 	let importeFinal;
 	let descuento;
-	// para calcular el nuevo importe deberia sumarle al importe original el descuento
-	// el calculo de porcentaje de un valor lo consigo multiplicando el calor por el porcentaje y lo divido por 100
 
 	importe = parseFloat (document.getElementById("txtIdimporte").value);	
 	
-	descuento = importe * 25 / 100;
+	//descuento = importe * 25 / 100;
+
+	/* descuento = importe * 0.25;
+
+	importeFinal = importe + descuento*/
+
+	// importeFinal = importe + (importe * 0.25) 
 
 	importeFinal = importe + descuento;
 
