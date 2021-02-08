@@ -7,7 +7,8 @@ function FahrenheitCentigrados ()
     let tempF;
     let tempC;
 
-    tempF = parseFloat(document.getElementById("txtIdTemperatura").value);
+    tempF = txtIdTemperatura.value;
+    tempF = parseInt(txtIdTemperatura);
     
     tempC = (tempF - 32) / 1.8;
 
@@ -19,7 +20,8 @@ function CentigradosFahrenheit ()
 	let tempF;
     let tempC;
 
-    tempC = parseFloat(document.getElementById("txtIdTemperatura").value);
+    tempC = txtIdTemperatura.value;
+    tempC = parseInt(txtIdTemperatura);
 
     tempF = tempC * 1.8 + 32; 
 

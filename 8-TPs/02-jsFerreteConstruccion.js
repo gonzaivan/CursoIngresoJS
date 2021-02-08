@@ -11,14 +11,17 @@ function Rectangulo ()
     let perimetro;
     let alambre;
 
-    largo = parseInt(document.getElementById("txtIdLargo").value);
-    ancho = parseInt(document.getElementById("txtIdAncho").value);
+    largo = txtIdLargo.value;
+    ancho = txtIdAncho.value;
+
+    largo = parseInt(largo);
+    ancho = parseInt(ancho);
 
     perimetro = (largo + ancho) * 2;
 
     alambre = perimetro * 3;
 
-    alert("la cantidad de alambre por metro es " +alambre);
+    alert("la cantidad de alambre por metro es "  +alambre);
 
 }
 function Circulo () 
@@ -28,8 +31,8 @@ function Circulo ()
     let alambre;
     const PI = 3.14;
 
-    radio = parseInt(document.getElementById("txtIdRadio").value);
-
+    radio = txtIdRadio.value;
+    radio = parseInt(radio)
     perimetro = 2 * PI * radio;
 
     alambre = perimetro * 3;
@@ -44,8 +47,11 @@ function Materiales ()
     let cemento;
     let cal;
 
-    largo = parseInt(document.getElementById("txtIdLargo").value);
-    ancho = parseInt(document.getElementById("txtIdAncho").value);
+    largo = txtIdLargo.value;
+    ancho = txtIdAncho.value;
+
+    largo = parseInt(largo);
+    ancho = parseInt(ancho);
     
     area = largo * ancho;
 

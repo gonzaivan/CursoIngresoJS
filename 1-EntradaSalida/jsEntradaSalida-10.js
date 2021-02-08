@@ -9,19 +9,20 @@ function mostrardescuento()
 	let importeFinal;
 	let descuento;
 
-	importe = parseFloat (document.getElementById("txtIdimporte").value);	
+	importe = txtIdImporte.value;	
+	importe = parseInt(importe);
 	
 	//descuento = importe * 25 / 100;
 
-	/* descuento = importe * 0.25;
+	descuento = importe * 25 / 100;
 
-	importeFinal = importe + descuento*/
+	//importeFinal = importe + descuento
 
 	// importeFinal = importe + (importe * 0.25) 
 
-	importeFinal = importe + descuento;
+	importeFinal = importe - descuento;
 
-	document.getElementById("txtIdResultado").value = importeFinal;
+	txtIdResultado.value = importeFinal;
 
 
 }
