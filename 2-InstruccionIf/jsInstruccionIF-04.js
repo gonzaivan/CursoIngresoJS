@@ -6,7 +6,7 @@ function mostrar()
 
 	edad = parseInt(edad);
 
-	if(edad >= 13 && edad <= 17){
+	if(edad > 12 && edad < 18){
 		alert("es adolecente");
 	}
 }//FIN DE LA FUNCIÓN
