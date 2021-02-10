@@ -2,7 +2,7 @@ function mostrar()
 {
 	let notas;
 
-	notas = Math.floor(Math.random() * 11);
+	notas = Math.floor(Math.random() * 10) + 1;
 
 	if(notas > 8){
 		alert("EXCELENTE");
