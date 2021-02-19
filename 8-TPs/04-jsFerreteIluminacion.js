@@ -12,47 +12,35 @@ function CalcularPrecio ()
 {
     var cantidad;
     var descuentoFinal;
+    var precioUnidad;
+
+    precioUnidad = 35;
+
+    pre
     
     cantidad = txtIdCantidad.value;
 	cantidad = parseInt(cantidad);
 	descuentoFinal = parseInt(descuentoFinal);
 
-	if(cantidad > 5){
-		descuentoFinal = cantidad - (cantidad * 50 / 100);
-		txtIdprecioDescuento.value = descuentoFinal;
-	}
+	if(cantidad > 5)
+	{
+		descuentoFinal = cantidad * 50 / 100;
+
 	else{
-		if(cantidad == 5 && Marca.value == "ArgentinaLuz"){
-    		descuentoFinal = cantidad - (cantidad * 40 / 100);
-    		txtIdprecioDescuento.value = descuentoFinal;
-   			
-				if(cantidad == 5 && Marca.value != "ArgentinaLuz"){
-   					descuentoFinal = cantidad - (cantidad * 30 / 100);
-   					txtIdprecioDescuento.value = descuentoFinal;
-   				}
-   					if(cantidad == 4 && Marca.value == "ArgentinaLuz" || Marca.value == "FelipeLamparas"){
-   							descuentoFinal = cantidad - (cantidad * 30 / 100);
-   							txtIdprecioDescuento.value = descuentoFinal;
-   					}
-   		}
-   	}
+
+	   if(cantidad==5){
+	   		if{
+	   			descuento = precioSinDescuento * 40
+	   		}
+    		descuentoFinal = cantidad * 40 / 100;
+		}
+		else{
+			if(cantidad == 5 && marca.value !="ArgentinaLuz"){
+				descuento = cantidad * 30 / 100;
+			}
+		}
+	}
+
+	precioFinal = precioSinDescuento - descuento;
+	txtIdprecioDescuento.value =  descuentoFinal;
 }
-
-	/*else{
-
-	   if(cantidad > 5 && Marca.value = "ArgentinaLuz"){
-    		else(cantidad > 5 && Marca.value != "ArgentinaLuz"){
-   			descuentoFinal = cantidad * 30 / 100;
-   			txtIdprecioDescuento.value = descuentoFinal;
-   		}
-
-    	descuentoFinal = cantidad * 40 / 100;
-    	txtIdprecioDescuento.value = descuentoFinal;
-    	}
-
-   	    else(cantidad > 5 && Marca.value != "ArgentinaLuz"){
-   			descuentoFinal = cantidad * 30 / 100;
-   			txtIdprecioDescuento.value = descuentoFinal;
-   		}
-   	}*/
-
